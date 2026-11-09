@@ -12,8 +12,8 @@ public class L4Q4 {
             // 2. Perform required calculation Processing
             boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
             int dayUntilMay = 31 + (isLeapYear ? 29 : 28) + 31 + 30;
-            int dayUntilAug = dayUntilMay + 31 + 30 + 31;
-            int dayUntilNov = dayUntilAug + 30 + 31 + 30;
+            int dayUntilAug = dayUntilMay +31 + 30 + 31;
+            int dayUntilNov = dayUntilAug + 31 + 30 + 31;
             int firstDayOfMay = (firstDayOfYear + dayUntilMay) % 7;
             int firstDayOfAug = (firstDayOfYear + dayUntilAug) % 7;
             int firstDayOfNov = (firstDayOfYear + dayUntilNov) % 7;
